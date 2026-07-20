@@ -283,6 +283,7 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libtime_genoff \
     libtrustedapploader \
+    libwebrtc_audio_preprocessing \
     libxml \
     libclearkeycasplugin \
     libasphere \
@@ -376,10 +377,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qteeconnector@1.0-impl \
     libBeauty_v4.camera.samsung \
     libDLInterface.camera.samsung \
+    libDeviceInfoProvider \
     libDualCamBokehCapture.camera.samsung \
     libEventFinder.camera.samsung \
     libFace_Landmark_API.camera.samsung \
     libGPQTEEC_vendor \
+    libHDRVerifier_v1.camera.samsung \
     libHandGesture.camera.samsung \
     libHprFace_GAE_api.camera.samsung \
     libHpr_RecGAE_cvFeature_v1.0.camera.samsung \
