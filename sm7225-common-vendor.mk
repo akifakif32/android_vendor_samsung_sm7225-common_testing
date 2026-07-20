@@ -335,6 +335,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@1.1 \
     vendor.qti.hardware.vpp@1.2 \
     vendor.qti.hardware.vpp@1.3 \
+    vendor.qti.memory.pasrmanager@1.0 \
+    vendor.qti.memory.pasrmanager@1.1 \
     vendor.qti.qspmhal@1.0 \
     vendor.samsung.hardware.bluetooth.a2dp@1.0 \
     vendor.samsung.hardware.bluetooth@2.0 \
@@ -373,8 +375,6 @@ PRODUCT_PACKAGES += \
     libwvdrmengine \
     libvolumelistener \
     vendor.qti.hardware.audiohalext@1.0 \
-    vendor.qti.memory.pasrmanager@1.0 \
-    vendor.qti.memory.pasrmanager@1.1 \
     camera.unihal.default \
     gatekeeper.mdfpp \
     vendor.qti.hardware.qteeconnector@1.0-impl \
