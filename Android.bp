@@ -3,14 +3,14 @@
 //
 
 soong_namespace {
-	imports: [
-		"device/samsung/sm7225-common",
-		"hardware/qcom-caf/sm8250",
-		"hardware/qcom-caf/wlan",
-		"hardware/samsung",
-		"vendor/qcom/opensource/dataservices",
-		"vendor/qcom/opensource/display",
-	],
+    imports: [
+        "device/samsung/sm7225-common",
+        "hardware/qcom-caf/sm8250",
+        "hardware/qcom-caf/wlan",
+        "hardware/samsung",
+        "vendor/qcom/opensource/dataservices",
+        "vendor/qcom/opensource/display",
+    ],
 }
 
 cc_prebuilt_library_shared {
@@ -7010,7 +7010,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libsnsapi.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libcutils",
                 "libutils",
                 "libqmi_common_so",
@@ -7027,7 +7027,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsnsapi.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libcutils",
                 "libutils",
                 "libqmi_common_so",
@@ -7057,7 +7057,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libsnsdiaglog.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
                 "libdiag",
                 "libsensorslog",
@@ -7076,7 +7076,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsnsdiaglog.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
                 "libdiag",
                 "libsensorslog",
@@ -7108,7 +7108,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libssc.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
                 "libsensorslog",
                 "libcutils",
@@ -7128,7 +7128,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libssc.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-lite-3.9.1",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "liblog",
                 "libsensorslog",
                 "libcutils",
@@ -7571,12 +7571,12 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/mediacas/libclearkeycasplugin.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-full-3.9.1",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libutils",
                 "liblog",
                 "libcrypto",
                 "libstagefright_foundation",
-                "libprotobuf-cpp-lite-3.9.1",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libc++",
                 "libc",
                 "libm",
@@ -7588,12 +7588,12 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mediacas/libclearkeycasplugin.so",
             ],
             shared_libs: [
-                "libprotobuf-cpp-full-3.9.1",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libutils",
                 "liblog",
                 "libcrypto",
                 "libstagefright_foundation",
-                "libprotobuf-cpp-lite-3.9.1",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libc++",
                 "libc",
                 "libm",
@@ -10732,7 +10732,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidlmemory",
                 "liblog",
-                "libprotobuf-cpp-lite-3.9.1",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libutils",
                 "libc++",
                 "libc",
@@ -10761,7 +10761,7 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "libcrypto-v33",
                 "liblog",
-                "libprotobuf-cpp-lite-3.9.1",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
                 "libstagefright_foundation",
                 "libutils",
                 "libc++",
@@ -11367,7 +11367,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libSEF.quram.so",
             ],
             shared_libs: [
-                "libclang_rt.ubsan_standalone-aarch64-android",
+                "libclang_rt.ubsan_standalone",
                 "liblog",
                 "libc++",
                 "libc",
@@ -11971,7 +11971,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libutils",
-                "libprotobuf-cpp-full-3.9.1",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libsensorslog",
                 "libqmi_common_so",
                 "libqmi_cci",
@@ -13473,6 +13473,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "librmsclib1",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/librmsclib1.so",
+            ],
+            shared_libs: [
+                "libm",
+                "libdl",
+                "liblog",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsavscmn",
     owner: "samsung",
     strip: {
@@ -13882,7 +13906,7 @@ cc_prebuilt_library_shared {
                 "libqmi_encdec",
                 "libdiag",
                 "libc++",
-                "libprotobuf-cpp-full-3.9.1",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libc",
                 "libm",
                 "libdl",
@@ -14969,7 +14993,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
-                "libprotobuf-cpp-full-3.9.1",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libc++",
                 "libc",
                 "libm",
@@ -16610,7 +16634,7 @@ cc_prebuilt_binary {
                 "android.hidl.safe_union@1.0",
                 "android.hidl.allocator@1.0",
                 "android.hidl.memory@1.0",
-                "libprotobuf-cpp-full-3.9.1",
+                "libprotobuf-cpp-full-3.9.1-vendorcompat",
                 "libsync",
                 "libc++",
                 "libc",

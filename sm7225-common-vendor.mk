@@ -463,6 +463,7 @@ PRODUCT_PACKAGES += \
     libremosaiclib \
     libril_sem \
     librilutils \
+    librmsclib1 \
     libsavscmn \
     libscenedetector.uniplugin@1.0 \
     libscveCommon \
