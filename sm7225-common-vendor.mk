@@ -146,6 +146,7 @@ PRODUCT_PACKAGES += \
     libSecureUILib \
     libStDrvInt \
     libVkLayer_q3dtools \
+    lib_SoundAlive_3DPosition_ver202 \
     libacdb-fts \
     libacdbloader \
     libacdbrtac \
@@ -229,6 +230,7 @@ PRODUCT_PACKAGES += \
     libperfgluelayer \
     libperfioctl \
     libperipheral_client \
+    libprofileparamstorage \
     libpvr \
     libqcbor \
     libqcc_file_agent \
@@ -273,6 +275,7 @@ PRODUCT_PACKAGES += \
     libsns_registry_skel \
     libsnsapi \
     libsnsdiaglog \
+    libspatializerparamstorage \
     libssc \
     libssc_default_listener \
     libssd \
