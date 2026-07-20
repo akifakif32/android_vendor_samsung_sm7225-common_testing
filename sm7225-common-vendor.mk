@@ -311,6 +311,7 @@ PRODUCT_PACKAGES += \
     libswdap \
     libswspatializer \
     libvisualizer \
+    spatializer-aidl-V1-cpp \
     unnhal-acc-hta \
     vendor.qti.gnss@1.0 \
     vendor.qti.gnss@1.1 \
@@ -371,7 +372,6 @@ PRODUCT_PACKAGES += \
     libwvhidl \
     libwvdrmengine \
     libvolumelistener \
-    spatializer-aidl-V1-cpp \
     vendor.qti.hardware.audiohalext@1.0 \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
