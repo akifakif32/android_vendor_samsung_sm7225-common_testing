@@ -577,9 +577,6 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     nxp.android.hardware.nfc@1.2-service.xml \
-    vendor.samsung.hardware.radio.exclude.qcom.xml \
-    vendor.samsung.hardware.radio_manifest_2_30.xml \
-    vendor.samsung.hardware.sehradio_manifest_2_30.xml \
     vendor.samsung.hardware.thermal@1.0-manifest.xml \
     adpl \
     adsprpcd \
