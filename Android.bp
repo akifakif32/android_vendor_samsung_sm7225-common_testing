@@ -791,7 +791,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "liblog",
                 "libutils",
-                "vendor.qti.hardware.fm@1.0",
+                "vendor.qti.hardware.fm@1.0_vendor",
                 "android.hardware.bluetooth@1.0-impl-qti",
                 "libc++",
                 "libc",
@@ -809,7 +809,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "liblog",
                 "libutils",
-                "vendor.qti.hardware.fm@1.0",
+                "vendor.qti.hardware.fm@1.0_vendor",
                 "android.hardware.bluetooth@1.0-impl-qti",
                 "libc++",
                 "libc",
@@ -9398,7 +9398,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.fm@1.0",
+    name: "vendor.qti.hardware.fm@1.0_vendor",
+    stem: "vendor.qti.hardware.fm@1.0",
     owner: "samsung",
     strip: {
         none: true,
@@ -11745,6 +11746,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libarcsoft_multi_frame_video_hdr",
+    allow_undefined_symbols: true,
     owner: "samsung",
     strip: {
         none: true,
@@ -15099,6 +15101,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/nfc_nci_nxpsn.so",
             ],
             shared_libs: [
+                "libbase_shim",
                 "android.hardware.nfc@1.0",
                 "android.hardware.nfc@1.1",
                 "android.hardware.nfc@1.2",
@@ -15160,6 +15163,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/unihal_main@2.15.so",
             ],
             shared_libs: [
+                "libui_shim",
                 "libutils",
                 "libcutils",
                 "libcamera_metadata",
@@ -15852,6 +15856,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.samsung.hardware.camera.device@5.0-impl",
+    allow_undefined_symbols: true,
     owner: "samsung",
     strip: {
         none: true,
@@ -15937,6 +15942,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.samsung.hardware.camera.provider@4.0-legacy",
+    allow_undefined_symbols: true,
     owner: "samsung",
     strip: {
         none: true,
@@ -16727,7 +16733,7 @@ cc_prebuilt_binary {
                 "libhidlbase",
                 "vendor.samsung.hardware.bluetooth@2.0",
                 "android.hardware.bluetooth@1.0",
-                "vendor.qti.hardware.fm@1.0",
+                "vendor.qti.hardware.fm@1.0_vendor",
                 "com.qualcomm.qti.ant@1.0",
                 "libqti_vndfwk_detect",
                 "libc++",
